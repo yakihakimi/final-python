@@ -32,10 +32,12 @@ jobs:
     #     python -m pip install --upgrade pip
     #     pip install flake8 pytest
     - uses: actions/checkout@v4
-    # - name: Build the Docker image
-    #   run: docker build . --file Dockerfile --tag lidorlg/my-image-name:${{ github.run_number }}-${GITHUB_SHA}
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag yakihakimi/docker-final-python:${{ github.run_number }}-${GITHUB_SHA}
     - name: docker login
       run: docker login -u ${{ secrets.USER_NAME }} -p ${{ secrets.USER_PASSWORD }}
-    # - name: docker push
-    #   run: docker push lidorlg/my-image-name:${{ github.run_number }}-${GITHUB_SHA}
-
+    - name: docker push
+      run: docker push yakihakimi/docker-final-python:${{ github.run_number }}-${GITHUB_SHA}
+    
+  # docker tag local-image:tagname new-repo:tagname
+  # docker push new-repo:tagname
