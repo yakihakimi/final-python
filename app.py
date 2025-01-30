@@ -14,9 +14,9 @@ def home():
     return '''<html>
                 <body style="text-align: center;">
                     <h1 style="color: blue; font-size: 50px;">Hello, Flask!</h1>
-                    <p style="color: green; font-size: 30px;">Yaki Hakimi: 200756625.</p>
-                    <p style="color: red; font-size: 30px;">sara .</p>
-                    <p style="color: yellow; font-size: 30px;">yocheved .</p>
+                    <p style="color: green; font-size: 30px;">Yaki Hakimi: 200756625 .</p>
+                    <p style="color: red; font-size: 30px;">Sara Ayash: 318411840 .</p>
+                    <p style="color: magenta; font-size: 30px;">Yocheved Rothstein: 318200532 .</p>
                 </body>
               </html>'''
 
