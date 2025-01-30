@@ -11,7 +11,14 @@ app = Flask(__name__)
 
 @app.route("/")  # Define the root route
 def home():
-    return "Hello, Flask!"  
+    return '''<html>
+                <body style="text-align: center;">
+                    <h1 style="color: blue; font-size: 50px;">Hello, Flask!</h1>
+                    <p style="color: green; font-size: 30px;">Yaki Hakimi: 200756625.</p>
+                    <p style="color: red; font-size: 30px;">sara .</p>
+                    <p style="color: yellow; font-size: 30px;">yocheved .</p>
+                </body>
+              </html>'''
 
 
 bluePrint = Blueprint('api', __name__, url_prefix='/api')
